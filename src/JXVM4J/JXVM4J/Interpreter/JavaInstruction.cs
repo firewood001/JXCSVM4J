@@ -26,11 +26,6 @@ namespace JXVM4J.Interpreter
         /// </summary>
         private string _description = null;
 
-        public string Description
-        {
-            get { return _description; }
-            set { _description = value; }
-        }
         /// <summary>
         /// 操作数集合
         /// </summary>
@@ -61,12 +56,23 @@ namespace JXVM4J.Interpreter
             }
         }
 
+        /// <summary>
+        /// 获得Java指令的描述
+        /// </summary>
+        public string Description
+        {
+            get { return _description; }
+        }
         #endregion
 
         #region public methods
         public override string ToString()
         {
-            return null;    
+            if (_mnemonic != null)
+            {
+                return _mnemonic;
+            }
+            return string.Empty;
         }
         #endregion
     }
