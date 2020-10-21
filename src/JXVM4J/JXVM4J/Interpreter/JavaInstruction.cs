@@ -15,6 +15,7 @@ namespace JXVM4J.Interpreter
         /// <summary>
         /// 操作码
         /// opcode
+        /// 我怀疑在.net的虚拟机中也是把char转成int处理，最后出栈的时候又转成char，如果验证成功，那么就可以把这个数据类型直接设置为int
         /// </summary>
         private char _op_code;
         /// <summary>
@@ -61,11 +62,41 @@ namespace JXVM4J.Interpreter
         /// </summary>
         public string Description
         {
-            get { return _description; }
+            get
+            {
+                return _description;
+            }
+        }
+        #endregion
+
+        #region constructors
+
+        public JavaInstruction(char opcode, string mnemonic, string description, params object[] operands)
+        {
+            _op_code = opcode;
+            _mnemonic = mnemonic;
+            _description = description;
+            if (operands != null)
+            {
+                _operands = new List<object>(operands.Length);
+                foreach (object operand in operands)
+                {
+                    _operands.Add(operand);
+                }
+            }
         }
         #endregion
 
         #region public methods
+
+        /// <summary>
+        /// 执行当前的Java指令
+        /// </summary>
+        public void execute()
+        {
+            System.Diagnostics.Debug.WriteLine("execute a java instruction " + this._mnemonic);
+        }
+
         public override string ToString()
         {
             if (_mnemonic != null)
