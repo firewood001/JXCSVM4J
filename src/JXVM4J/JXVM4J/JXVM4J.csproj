@@ -40,8 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Interpreter\JavaInstruction.cs" />
-    <Compile Include="Interpreter\JavaInstructionTable.cs" />
+    <Compile Include="Share\Interpreter\JavaInstruction.cs" />
+    <Compile Include="Share\Interpreter\JavaInstructionTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

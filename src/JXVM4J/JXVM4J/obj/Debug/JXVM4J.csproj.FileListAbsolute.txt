@@ -1,0 +1,5 @@
+C:\Users\JingXin\Documents\Projects\JXCSVM\src\JXVM4J\JXVM4J\bin\Debug\JXVM4J.dll
+C:\Users\JingXin\Documents\Projects\JXCSVM\src\JXVM4J\JXVM4J\bin\Debug\JXVM4J.pdb
+C:\Users\JingXin\Documents\Projects\JXCSVM\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.csprojResolveAssemblyReference.cache
+C:\Users\JingXin\Documents\Projects\JXCSVM\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.dll
+C:\Users\JingXin\Documents\Projects\JXCSVM\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.pdb

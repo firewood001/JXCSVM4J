@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace JXVM4J.Interpreter
+namespace JXVM4J.Share.Interpreter
 {
     /// <summary>
     /// This is a class used to describe the Java Instruction
