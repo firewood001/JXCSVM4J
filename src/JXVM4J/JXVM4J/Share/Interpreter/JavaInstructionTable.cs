@@ -4,7 +4,7 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 
-namespace JXVM4J.Interpreter
+namespace JXVM4J.Share.Interpreter
 {
     public enum EumJavaOpCode
     {
@@ -123,7 +123,35 @@ namespace JXVM4J.Interpreter
         irem=0x70,
         lrem=0x71,
         frem=0x72,
-        drem=0x73
+        drem=0x73,
+        ineg=0x74,
+        lneg=0x75,
+        fneg=0x76,
+        dneg=0x77,
+        ishl=0x78,
+        lshl=0x79,
+        ishr=0x7a,
+        lshr=0x7b,
+        iushr=0x7c,
+        lushr=0x7d,
+        iand=0x7e,
+        land=0x7f,
+        ior=0x80,
+        lor=0x81,
+        ixor=0x82,
+        lxor=0x83,
+        iinc=0x84,
+        i2l=0x85,
+        i2f=0x86,
+        i2d=0x87,
+        l2i=0x88,
+        l2f=0x89,
+        l2d=0x8a,
+        f2i=0x8b,
+        f2l=0x8c,
+        f2d=0x8d,
+        d2i=0x8e,
+        d2l=0x8f
     }
     public class JavaInstructionTable
     {
