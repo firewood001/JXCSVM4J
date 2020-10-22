@@ -30,7 +30,7 @@ namespace JXVM4J.Interpreter
         /// <summary>
         /// 操作数集合
         /// </summary>
-        private List<object> _operands = null;
+        private object[] _operands = null;
 
         #endregion
 
@@ -78,10 +78,11 @@ namespace JXVM4J.Interpreter
             _description = description;
             if (operands != null)
             {
-                _operands = new List<object>(operands.Length);
-                foreach (object operand in operands)
+                _operands = new object[operands.Length];
+                int count = operands.Count();
+                for (int i = 0; i < count; i++)
                 {
-                    _operands.Add(operand);
+                    _operands[i] = operands[i];
                 }
             }
         }
@@ -92,7 +93,7 @@ namespace JXVM4J.Interpreter
         /// <summary>
         /// 执行当前的Java指令
         /// </summary>
-        public void execute()
+        public void Execute()
         {
             System.Diagnostics.Debug.WriteLine("execute a java instruction " + this._mnemonic);
         }
