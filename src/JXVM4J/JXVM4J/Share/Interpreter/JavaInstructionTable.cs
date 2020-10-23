@@ -6,7 +6,7 @@ using System.Text;
 
 namespace JXVM4J.Share.Interpreter
 {
-    public enum EumJavaOpCode
+    public enum EnumJavaOpCode
     {
         nop = 0x00,
         aconst_null = 0x01,
@@ -263,24 +263,32 @@ namespace JXVM4J.Share.Interpreter
         /// </summary>
         private void InitialJavaInstructionTable()
         {
-            JavaInstruction instruction = new JavaInstruction((char)0x00, "nop", "什么都不做", null);
-            _table.Add((char)0x00, instruction);
+            JavaInstruction instruction = new JavaInstruction((char)EnumJavaOpCode.nop, "nop", "什么都不做", null);
+            _table.Add((char)EnumJavaOpCode.nop, instruction);
 
-            instruction = new JavaInstruction((char)0x01, "aconst_null", "将null推送至栈顶", null);
-            _table.Add((char)0x01, instruction);
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aconst_null, "aconst_null", "将null推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.aconst_null, instruction);
 
-            instruction = new JavaInstruction((char)0x02, "iconst_m1", "将null将int型-1推送至栈顶", null);
-            _table.Add((char)0x02, instruction);
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_m1, "iconst_m1", "将null将int型-1推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_m1, instruction);
 
-            instruction = new JavaInstruction((char)0x03, "iconst_0", "将int常量0推送至栈顶", null);
-            _table.Add((char)0x03, instruction);
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_0, "iconst_0", "将int常量0推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_0, instruction);
 
-            instruction = new JavaInstruction((char)0x04, "iconst_1", "将int常量1推送至栈顶", null);
-            _table.Add((char)0x04, instruction);
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_1, "iconst_1", "将int常量1推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_1, instruction);
 
-            instruction = new JavaInstruction((char)0x05, "iconst_2", "将int常量2推送至栈顶", null);
-            _table.Add((char)0x05, instruction);
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_2, "iconst_2", "将int常量2推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_2, instruction);
 
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_3, "iconst_3", "将int常量3推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_3, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_4, "iconst_4", "将int常量4推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_4, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_5, "iconst_5", "将int常量5推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iconst_5, instruction);
         }
 
         #endregion
