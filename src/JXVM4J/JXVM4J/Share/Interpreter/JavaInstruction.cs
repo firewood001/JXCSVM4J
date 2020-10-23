@@ -90,14 +90,6 @@ namespace JXVM4J.Share.Interpreter
 
         #region public methods
 
-        /// <summary>
-        /// 执行当前的Java指令
-        /// </summary>
-        public void Execute()
-        {
-            System.Diagnostics.Debug.WriteLine("execute a java instruction " + this._mnemonic);
-        }
-
         public override string ToString()
         {
             if (_mnemonic != null)

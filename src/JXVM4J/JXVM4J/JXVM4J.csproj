@@ -40,9 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Share\Interpreter\AbstractExecutor.cs" />
     <Compile Include="Share\Interpreter\JavaInstruction.cs" />
     <Compile Include="Share\Interpreter\JavaInstructionTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Share\Interpreter\NativeExecutor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
