@@ -1,7 +1,0 @@
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.UnitTest.dll
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.UnitTest.pdb
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.dll
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.pdb
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.dll
-C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.pdb
