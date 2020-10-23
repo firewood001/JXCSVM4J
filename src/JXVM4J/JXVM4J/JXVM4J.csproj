@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Share\Interpreter\AbstractExecutor.cs" />
     <Compile Include="Share\Interpreter\JavaInstruction.cs" />
     <Compile Include="Share\Interpreter\JavaInstructionTable.cs" />
