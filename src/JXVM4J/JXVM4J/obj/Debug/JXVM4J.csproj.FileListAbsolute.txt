@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J\bin\Debug\JXVM4J.dll
+C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J\bin\Debug\JXVM4J.pdb
+C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.dll
+C:\Users\Administrator\Documents\project\JXCSVM\JXCSVM4J\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.pdb

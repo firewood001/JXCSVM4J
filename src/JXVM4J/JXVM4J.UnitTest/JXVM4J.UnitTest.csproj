@@ -53,8 +53,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="InterpreterUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JXVM4J\JXVM4J.csproj">
+      <Project>{58d1c5a5-5ab3-42cb-a9fa-a763c0807bbb}</Project>
+      <Name>JXVM4J</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
