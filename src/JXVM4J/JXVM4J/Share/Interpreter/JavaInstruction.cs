@@ -32,6 +32,9 @@ namespace JXVM4J.Share.Interpreter
         /// </summary>
         private object[] _operands = null;
 
+        /// to be sure that only one executor can be executed at one time
+        private volatile AbstractExecutor  m_executor = null;
+        
         #endregion
 
         #region public properties
@@ -67,6 +70,7 @@ namespace JXVM4J.Share.Interpreter
                 return _description;
             }
         }
+
         #endregion
 
         #region constructors
@@ -88,7 +92,14 @@ namespace JXVM4J.Share.Interpreter
         }
         #endregion
 
-        #region public methods
+        #region public properties
+        public  void SetOperands(params object[] operands)
+        {
+                _operands = value;
+        }
+        #endregion
+
+        #region public method
 
         public override string ToString()
         {

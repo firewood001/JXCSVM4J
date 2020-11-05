@@ -289,6 +289,37 @@ namespace JXVM4J.Share.Interpreter
 
             instruction = new JavaInstruction((char)EnumJavaOpCode.iconst_5, "iconst_5", "将int常量5推送至栈顶", null);
             _table.Add((char)EnumJavaOpCode.iconst_5, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lconst_0, "lconst_0", "将long常量0推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.lconst_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lconst_1, "lconst_1", "将long常量1推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.lconst_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fconst_0, "fconst_0", "将float常量0推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.fconst_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fconst_1, "fconst_1", "将float常量1推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCfconst_1de.fconst_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fconst_2, "fconst_2", "将float常量2推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.fconst_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dconst_0, "dconst_0", "将double常量0推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.dconst_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dconst_1, "dconst_1", "将double常量1推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.dconst_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.bipush, "bipush", "将单字节的常量值(-128~127)推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.bipush, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.sipush, "sipush", "将一个短整型常量值(-32768~32767)推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.sipush, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.ldc, "ldc", "将int, float或String型常量值从常量池中推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.ldc, instruction);
+
         }
 
         #endregion
