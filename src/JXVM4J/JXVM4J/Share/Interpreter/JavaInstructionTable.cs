@@ -236,7 +236,7 @@ namespace JXVM4J.Share.Interpreter
 
         #endregion
 
-        #region public members
+        #region public methods
 
         public static JavaInstructionTable GetInstance()
         {
@@ -254,6 +254,19 @@ namespace JXVM4J.Share.Interpreter
             return _instance;
         }
         
+        public JavaInstruction GetInstruction(EnumJavaOpCode opCode)
+        {
+            JavaInstruction result = null;
+            
+            _table.TryGetValue((int)opCode, out result);
+            result = result.Clone();
+
+            if(result == null)
+            {
+                throw new NullReferenceException("No instruction exists");
+            }
+            return result;
+        }
         #endregion
 
         #region private methods

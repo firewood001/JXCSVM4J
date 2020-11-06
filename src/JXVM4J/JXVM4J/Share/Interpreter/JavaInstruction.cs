@@ -16,8 +16,9 @@ namespace JXVM4J.Share.Interpreter
         /// 操作码
         /// opcode
         /// 我怀疑在.net的虚拟机中也是把char转成int处理，最后出栈的时候又转成char，如果验证成功，那么就可以把这个数据类型直接设置为int
+        /// 不管上面的怀疑，用EnumJavaOpCode直接进行语法级别的检查
         /// </summary>
-        private char _op_code;
+        private EnumJavaOpCode _op_code;
         /// <summary>
         /// 助记符
         /// </summary>
@@ -28,12 +29,9 @@ namespace JXVM4J.Share.Interpreter
         private string _description = null;
 
         /// <summary>
-        /// 操作数集合
+        /// 操作数
         /// </summary>
-        private object[] _operands = null;
-
-        /// to be sure that only one executor can be executed at one time
-        private readonly AbstractExecutor  m_executor = AbstractExecutor.GetInstance();
+        private object _operand = null;
         
         #endregion
 
@@ -45,7 +43,7 @@ namespace JXVM4J.Share.Interpreter
         {
             get
             {
-                return _op_code;
+                return (char)_op_code;
             }
         }
 
@@ -75,27 +73,19 @@ namespace JXVM4J.Share.Interpreter
 
         #region constructors
 
-        public JavaInstruction(char opcode, string mnemonic, string description, params object[] operands)
+        public JavaInstruction(char opcode, string mnemonic, string description, object operand)
         {
-            _op_code = opcode;
+            _op_code = (EnumJavaOpCode)opcode;
             _mnemonic = mnemonic;
             _description = description;
-            if (operands != null)
-            {
-                _operands = new object[operands.Length];
-                int count = operands.Count();
-                for (int i = 0; i < count; i++)
-                {
-                    _operands[i] = operands[i];
-                }
-            }
+            _operand = operand;
         }
         #endregion
 
         #region public properties
-        public void SetOperands(params object[] operands)
+        public void SetOperands(object operand)
         {
-                //_operands = value;
+                _operand = operand;
         }
         #endregion
 
@@ -109,6 +99,13 @@ namespace JXVM4J.Share.Interpreter
             }
             return string.Empty;
         }
+
+        public JavaInstruction Clone()
+        {
+            JavaInstruction result = new JavaInstruction((char)_op_code, _mnemonic, _description, _operand);
+            return result;
+        }
+
         #endregion
     }
 }
