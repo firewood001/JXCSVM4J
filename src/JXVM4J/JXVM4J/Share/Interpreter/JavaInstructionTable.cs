@@ -333,6 +333,140 @@ namespace JXVM4J.Share.Interpreter
             instruction = new JavaInstruction((char)EnumJavaOpCode.ldc, "ldc", "将int, float或String型常量值从常量池中推送至栈顶", null);
             _table.Add((char)EnumJavaOpCode.ldc, instruction);
 
+            instruction = new JavaInstruction((char)EnumJavaOpCode.ldc_w, "ldc_w", "常量编号|将int, float或String型常量值从常量池中推送至栈顶（宽索引）", null);
+            _table.Add((char)EnumJavaOpCode.ldc_w, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.ldc_w, "ldc_w", "常量编号|将int, float或String型常量值从常量池中推送至栈顶（宽索引）", null);
+            _table.Add((char)EnumJavaOpCode.ldc_w, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.ldc2_w, "ldc2_w", "常量编号|将long或double型常量值从常量池中推送至栈顶（宽索引）", null);
+            _table.Add((char)EnumJavaOpCode.ldc2_w, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iload, "iload", "将位置为vindex的int类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.iload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lload, "lload", "将位置为vindex和(vindex+1)的long类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.lload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fload, "fload", "将位置为vindex的float类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.fload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dload, "dload", "将位置为vindex和(vindex+1)的double类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.dload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aload, "aload", "将位置为vindex的对象引用局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.aload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iload_0, "iload_0", "将位置为0的int类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.iload_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iload_1, "iload_1", "将位置为1的int类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.iload_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iload_2, "iload_2", "将位置为2的int类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.iload_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iload_3, "iload_3", "将位置为3的int类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.iload_3, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lload_0, "lload_0", "将位置为0和1的long类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.lload_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lload_1, "lload_1", "将位置为1和2的long类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.lload_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lload_2, "lload_2", "将位置为2和3的long类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.lload_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lload_3, "lload_3", "将位置为3和4的long类型的局部变量压入栈", null);
+            _table.Add((char)EnumJavaOpCode.lload_3, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fload_1, "fload_1", "将本地变量表的第二个float型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.fload_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fload_2, "fload_2", "将本地变量表的第三个float型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.fload_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fload_3, "fload_3", "将本地变量表的第四个float型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.fload_3, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dload_0, "dload_0", "将本地变量表的第一个double型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.dload_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dload_1, "dload_1", "将本地变量表的第二个double型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.dload_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dload_2, "dload_2", "将本地变量表的第三个double型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.dload_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dload_3, "dload_3", "将本地变量表的第四个double型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.dload_3, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aload_0, "aload_0", "将引用类型变量推送至栈顶,非静态方法中 表示对this的操作，静态方法中表示对方法的第一参数的操作", null);
+            _table.Add((char)EnumJavaOpCode.aload_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aload_1, "aload_1", "将本地变量表的第二个引用类型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.aload_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aload_1, "aload_1", "将本地变量表的第二个引用类型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.aload_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aload_2, "aload_2", "将本地变量表的第三个引用类型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.aload_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aload_3, "aload_3", "将本地变量表的第四个引用类型本地变量推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.aload_3, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.iaload, "iaload", "将int型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.iaload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.laload, "laload", "将long型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.laload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.faload, "faload", "将float型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.faload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.daload, "daload", "将double型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.daload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.aaload, "aaload", "将引用型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.aaload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.baload, "baload", "将boolean或byte型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.baload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.caload, "caload", "将char型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.caload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.caload, "saload", "将short型数组指定索引的值推送至栈顶", null);
+            _table.Add((char)EnumJavaOpCode.saload, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.istore, "istore", "将栈顶int型数值存入指定本地变量", null);
+            _table.Add((char)EnumJavaOpCode.istore, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.lstore, "lstore", "将栈顶long型数值存入指定本地变量", null);
+            _table.Add((char)EnumJavaOpCode.lstore, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.fstore, "fstore", "将栈顶float型数值存入指定本地变量", null);
+            _table.Add((char)EnumJavaOpCode.fstore, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.dstore, "dstore", "将栈顶double型数值存入指定本地变量", null);
+            _table.Add((char)EnumJavaOpCode.dstore, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.astore, "astore", "将栈顶引用型数值存入指定本地变量", null);
+            _table.Add((char)EnumJavaOpCode.astore, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.istore_0, "istore_0", "将栈顶int型数值存入第一个本地变量", null);
+            _table.Add((char)EnumJavaOpCode.istore_0, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.istore_1, "istore_1", "将栈顶int型数值存入第二个本地变量", null);
+            _table.Add((char)EnumJavaOpCode.istore_1, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.istore_2, "istore_2", "将栈顶int型数值存入第三个本地变量", null);
+            _table.Add((char)EnumJavaOpCode.istore_2, instruction);
+
+            instruction = new JavaInstruction((char)EnumJavaOpCode.istore_3, "istore_3", "将栈顶int型数值存入第四个本地变量", null);
+            _table.Add((char)EnumJavaOpCode.istore_3, instruction);
         }
 
         #endregion
