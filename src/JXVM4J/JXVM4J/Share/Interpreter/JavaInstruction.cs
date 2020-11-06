@@ -33,7 +33,7 @@ namespace JXVM4J.Share.Interpreter
         private object[] _operands = null;
 
         /// to be sure that only one executor can be executed at one time
-        private volatile AbstractExecutor  m_executor = null;
+        private readonly AbstractExecutor  m_executor = AbstractExecutor.GetInstance();
         
         #endregion
 
