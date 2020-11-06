@@ -17,7 +17,7 @@ namespace JXVM4J.UnitTest
         [TestMethod]
         public void TestExecutor_Execute()
         {
-            JavaInstruction ji = new JavaInstruction((char)EumJavaOpCode.aaload, "aaload", "无|将引用型数组指定索引的值推送至栈顶", null);
+            JavaInstruction ji = new JavaInstruction((char)EnumJavaOpCode.aaload, "aaload", "无|将引用型数组指定索引的值推送至栈顶", null);
             NativeExecutor executor = new NativeExecutor();
             executor.Execute(ji);
         }

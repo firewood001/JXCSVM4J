@@ -12,9 +12,9 @@ namespace JXVM4J.Share.Interpreter
     {
         #region private members
         
-        private static AbstractExecutor _executor  = null;
+        private static volatile AbstractExecutor _executor  = null;
 
-        private static readonly volatile object _obj = new Object();
+        private static readonly object _obj = new Object();
 
         #endregion
 

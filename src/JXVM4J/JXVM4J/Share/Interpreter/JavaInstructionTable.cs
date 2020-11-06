@@ -300,7 +300,7 @@ namespace JXVM4J.Share.Interpreter
             _table.Add((char)EnumJavaOpCode.fconst_0, instruction);
 
             instruction = new JavaInstruction((char)EnumJavaOpCode.fconst_1, "fconst_1", "将float常量1推送至栈顶", null);
-            _table.Add((char)EnumJavaOpCfconst_1de.fconst_1, instruction);
+            _table.Add((char)EnumJavaOpCode.fconst_1, instruction);
 
             instruction = new JavaInstruction((char)EnumJavaOpCode.fconst_2, "fconst_2", "将float常量2推送至栈顶", null);
             _table.Add((char)EnumJavaOpCode.fconst_2, instruction);

@@ -93,9 +93,9 @@ namespace JXVM4J.Share.Interpreter
         #endregion
 
         #region public properties
-        public  void SetOperands(params object[] operands)
+        public void SetOperands(params object[] operands)
         {
-                _operands = value;
+                //_operands = value;
         }
         #endregion
 

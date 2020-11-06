@@ -1,0 +1,10 @@
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.csprojAssemblyReference.cache
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.csproj.CoreCompileInputs.cache
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.UnitTest.dll
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.UnitTest.pdb
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.dll
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\bin\Debug\JXVM4J.pdb
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.csproj.CopyComplete
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.dll
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J.UnitTest\obj\Debug\JXVM4J.UnitTest.pdb

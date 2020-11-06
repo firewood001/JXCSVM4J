@@ -1,0 +1,5 @@
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.csproj.CoreCompileInputs.cache
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J\bin\Debug\JXVM4J.dll
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J\bin\Debug\JXVM4J.pdb
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.dll
+D:\project\JXCSVM4J\src\JXVM4J\JXVM4J\obj\Debug\JXVM4J.pdb
